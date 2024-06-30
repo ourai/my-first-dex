@@ -8,9 +8,15 @@ importers:
 
   .:
     dependencies:
+      '@ant-design/icons':
+        specifier: ^5.3.7
+        version: 5.3.7(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@ant-design/web3':
         specifier: ^1.15.1
         version: 1.15.1(antd@5.18.3(date-fns@2.30.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@ant-design/web3-assets':
+        specifier: ^1.9.0
+        version: 1.9.0(antd@5.18.3(date-fns@2.30.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@ant-design/web3-wagmi':
         specifier: ^2.7.0
         version: 2.7.0(@tanstack/react-query@5.49.2(react@18.3.1))(antd@5.18.3(date-fns@2.30.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(viem@2.16.4(bufferutil@4.0.8)(typescript@5.5.2))(wagmi@2.10.8(@tanstack/query-core@5.49.1)(@tanstack/react-query@5.49.2(react@18.3.1))(@types/react@18.3.3)(bufferutil@4.0.8)(react-dom@18.3.1(react@18.3.1))(react-i18next@13.5.0(i18next@22.5.1)(react-dom@18.3.1(react@18.3.1))(react-native@0.74.2(@babel/core@7.24.7)(@babel/preset-env@7.24.7(@babel/core@7.24.7))(@types/react@18.3.3)(bufferutil@4.0.8)(react@18.3.1))(react@18.3.1))(react-native@0.74.2(@babel/core@7.24.7)(@babel/preset-env@7.24.7(@babel/core@7.24.7))(@types/react@18.3.3)(bufferutil@4.0.8)(react@18.3.1))(react@18.3.1)(rollup@4.18.0)(typescript@5.5.2)(viem@2.16.4(bufferutil@4.0.8)(typescript@5.5.2)))
@@ -47,7 +53,7 @@ importers:
         version: 7.14.1(eslint@8.57.0)(typescript@5.5.2)
       '@vitejs/plugin-react':
         specifier: ^4.3.1
-        version: 4.3.1(vite@5.3.2(@types/node@20.14.9)(terser@5.31.1))
+        version: 4.3.1(vite@5.3.2(@types/node@20.14.9)(sass@1.77.6)(terser@5.31.1))
       eslint:
         specifier: ^8.57.0
         version: 8.57.0
@@ -57,12 +63,15 @@ importers:
       eslint-plugin-react-refresh:
         specifier: ^0.4.7
         version: 0.4.7(eslint@8.57.0)
+      sass:
+        specifier: ^1.77.6
+        version: 1.77.6
       typescript:
         specifier: ^5.2.2
         version: 5.5.2
       vite:
         specifier: ^5.3.1
-        version: 5.3.2(@types/node@20.14.9)(terser@5.31.1)
+        version: 5.3.2(@types/node@20.14.9)(sass@1.77.6)(terser@5.31.1)
 
 packages:
 
@@ -2835,6 +2844,9 @@ packages:
     engines: {node: '>=16.x'}
     hasBin: true
 
+  immutable@4.3.6:
+    resolution: {integrity: sha512-Ju0+lEMyzMVZarkTn/gqRpdqd5dOPaz1mCZ0SH3JV6iFw81PldE/PEB1hWVEA288HPt4WXW8O7AWxB10M+03QQ==}
+
   import-fresh@2.0.0:
     resolution: {integrity: sha512-eZ5H8rcgYazHbKC3PG4ClHNykCSxtAhxSSEM+2mb+7evD2CKF5V7c0dNum7AdpDh0ZdICwZY9sRSn8f+KH96sg==}
     engines: {node: '>=4'}
@@ -4092,6 +4104,11 @@ packages:
   safe-stable-stringify@2.4.3:
     resolution: {integrity: sha512-e2bDA2WJT0wxseVd4lsDP4+3ONX6HpMXQa1ZhFQ7SU+GjvORCmShbCMltrtIDfkYhVHrOcPtj+KhmDBdPdZD1g==}
     engines: {node: '>=10'}
+
+  sass@1.77.6:
+    resolution: {integrity: sha512-ByXE1oLD79GVq9Ht1PeHWCPMPB8XHpBuz1r85oByKHjZY6qV6rWnQovQzXJXuQ/XyE1Oj3iPk3lo28uzaRA2/Q==}
+    engines: {node: '>=14.0.0'}
+    hasBin: true
 
   scheduler@0.23.2:
     resolution: {integrity: sha512-UOShsPwz7NrMUqhR6t0hWjFduvOzbtv7toDH1/hIrfRNIDBnnBWd0CwJTGvTpngVlmwGCdP9/Zl/tVrDqcuYzQ==}
@@ -7040,14 +7057,14 @@ snapshots:
 
   '@ungap/structured-clone@1.2.0': {}
 
-  '@vitejs/plugin-react@4.3.1(vite@5.3.2(@types/node@20.14.9)(terser@5.31.1))':
+  '@vitejs/plugin-react@4.3.1(vite@5.3.2(@types/node@20.14.9)(sass@1.77.6)(terser@5.31.1))':
     dependencies:
       '@babel/core': 7.24.7
       '@babel/plugin-transform-react-jsx-self': 7.24.7(@babel/core@7.24.7)
       '@babel/plugin-transform-react-jsx-source': 7.24.7(@babel/core@7.24.7)
       '@types/babel__core': 7.20.5
       react-refresh: 0.14.2
-      vite: 5.3.2(@types/node@20.14.9)(terser@5.31.1)
+      vite: 5.3.2(@types/node@20.14.9)(sass@1.77.6)(terser@5.31.1)
     transitivePeerDependencies:
       - supports-color
 
@@ -8457,6 +8474,8 @@ snapshots:
   image-size@1.1.1:
     dependencies:
       queue: 6.0.2
+
+  immutable@4.3.6: {}
 
   import-fresh@2.0.0:
     dependencies:
@@ -9946,6 +9965,12 @@ snapshots:
 
   safe-stable-stringify@2.4.3: {}
 
+  sass@1.77.6:
+    dependencies:
+      chokidar: 3.6.0
+      immutable: 4.3.6
+      source-map-js: 1.2.0
+
   scheduler@0.23.2:
     dependencies:
       loose-envify: 1.4.0
@@ -10363,7 +10388,7 @@ snapshots:
       - utf-8-validate
       - zod
 
-  vite@5.3.2(@types/node@20.14.9)(terser@5.31.1):
+  vite@5.3.2(@types/node@20.14.9)(sass@1.77.6)(terser@5.31.1):
     dependencies:
       esbuild: 0.21.5
       postcss: 8.4.39
@@ -10371,6 +10396,7 @@ snapshots:
     optionalDependencies:
       '@types/node': 20.14.9
       fsevents: 2.3.3
+      sass: 1.77.6
       terser: 5.31.1
 
   vlq@1.0.1: {}
