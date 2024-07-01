@@ -23,6 +23,7 @@ const USDC: AntdToken = {
 
 const TOKEN_LIST = [ETH, SHIB, USDT, USDC]
 
+const ETH_MAINNET_UNISWAP_V2_ROUTER_CONTRACT = '0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D'
 const ETHERSCAN_API_KEY = import.meta.env.VITE_ETHERSCAN_API_KEY
 
 const etherscanApiUrlMap: Record<number, string> = {
@@ -51,4 +52,4 @@ function getEtherscanApiUrl(chainId: number): string {
   return etherscanApiUrlMap[chainId] || ''
 }
 
-export { TOKEN_LIST, ETHERSCAN_API_KEY, getWagmiConfig, getWagmiChains, getEtherscanApiUrl }
+export { TOKEN_LIST, ETH_MAINNET_UNISWAP_V2_ROUTER_CONTRACT, ETHERSCAN_API_KEY, getWagmiConfig, getWagmiChains, getEtherscanApiUrl }

@@ -38,4 +38,8 @@ function resolveUniswapToken(crypto: CryptoValue, chainId: number): Token | null
   return new Token(chainId, addr, decimal as number, symbol, name)
 }
 
-export { isCryptoValid, resolveUniswapToken }
+function resolveValidUniswapTokens(pair: CryptoValue[], chainId: number): Token[] {
+  return pair.map(crypto => resolveUniswapToken(crypto, chainId)).filter(token => !!token) as Token[]
+}
+
+export { isCryptoValid, resolveValidUniswapTokens }
