@@ -7,6 +7,7 @@
     "@ant-design/icons": "^5.3.7",
     "@ant-design/web3": "^1.15.1",
     "@ant-design/web3-assets": "^1.9.0",
+    "@ant-design/web3-icons": "^1.7.0",
     "@ant-design/web3-wagmi": "^2.7.0",
     "@ntks/toolbox": "^0.0.6",
     "@tanstack/react-query": "^5.49.2",
@@ -15,12 +16,14 @@
     "@wagmi/core": "2.11.5",
     "antd": "^5.18.3",
     "axios": "^1.7.2",
+    "lodash.debounce": "^4.0.8",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "viem": "^2.16.4",
     "wagmi": "^2.10.8"
   },
   "devDependencies": {
+    "@types/lodash.debounce": "^4.0.9",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
     "@typescript-eslint/eslint-plugin": "^7.13.1",
