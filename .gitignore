@@ -4,6 +4,16 @@
 
 sh.exe.stackdump
 
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
 # Logs
 logs
 *.log
@@ -15,9 +25,23 @@ lerna-debug.log*
 
 # npm
 package-lock.json
+pnpm-lock.yaml
+yarn.lock
 node_modules
+/.pnp
+.pnp.js
+.yarn/install-state.gz
 .env
 
 dist
 dist-ssr
 *.local
+
+.editorconfig
+.vscode
+*.pem
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts

@@ -1,3 +1,5 @@
+'use client';
+
 import { Layout, Flex, Space } from 'antd'
 import { Connector, ConnectButton } from '@ant-design/web3'
 
